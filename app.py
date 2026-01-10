@@ -12,6 +12,7 @@ from streamlit_lottie import st_lottie
 
 # ------------------ NLTK SETUP ------------------
 nltk.download('punkt')
+nltk.download('punkt_tab') 
 nltk.download('stopwords')
 
 ps = PorterStemmer()
@@ -152,3 +153,4 @@ if st.button("Analyze Message") and model_loaded:
 # ------------------ FOOTER ------------------
 st.markdown("---")
 st.caption("Note: Accuracy depends on training data quality.")
+
